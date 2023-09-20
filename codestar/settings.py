@@ -31,7 +31,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['djangoblog-alex.herokuapp.com',
-                 'djangoblog-alex-4540ba896145.herokuapp.com', 'localhost']
+                 'djangoblog-alex-4540ba896145.herokuapp.com',
+                 '8000-alexdralur-djangoblog-0byznvsgn0.us2.codeanyapp.com',
+                 'localhost']
 
 
 # Application definition
@@ -134,7 +136,7 @@ STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-MEDIA_URL = '/media'
+MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Default primary key field type
